@@ -204,6 +204,13 @@ function createatom(current) {
                         //alert(part);
                         var prop = part[0];
                         var val = part[1];
+                        
+                             function extrastyle(part) {
+
+                            $(current).css(part[0], part[1]);
+
+                        }
+                        
                         if (part[0] == "hideatom") {
                             break;
                         } else if (part[0] == "rotate") {
@@ -403,12 +410,6 @@ function createatom(current) {
 
                         } 
 
-
-                        function extrastyle(part) {
-
-                            $(current).css(part[0], part[1]);
-
-                        }
 
                         function addstyle(part, val) {
                             if (val !== undefined) {
