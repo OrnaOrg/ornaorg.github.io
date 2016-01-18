@@ -401,14 +401,7 @@ function createatom(current) {
                             extrastyle(part);
 
 
-                        } else if (part[0] == "capitalize") {
-
-                            part[0] = 'text-transform';
-                            part[1] = 'capitalize';
-                            extrastyle(part);
-
-
-                        }
+                        } 
 
 
                         function extrastyle(part) {
