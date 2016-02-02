@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>OrnaJS</title>
-    <script src="jquery-1.12.0.js"></script>
-    <script src="orna-0.3.4.js"></script>
+    <script src="jquery-2.2.0.js"></script>
+    <script src="orna-0.4.0.js"></script>
     <link rel="icon" href="img/icon.png"> </head>
 
 <body class="min-width_500px background-color_white Arial margin_0">
@@ -22,15 +22,15 @@
             <div class="background_rgb(255,255,255) padding_20px shadow">
                 <h3 class="Times">What is Orna?</h3> <a href="https://github.com/OrnaOrg/OrnaJS" class="color_#ee0645 text-decoration_none">Orna</a> is a good tool, designed for atomize Web UI.
                 <br>
-                <br><span class="color_black">Atomic CSS</span> is a model or style of coding where each of properties has own style class.
+                <br><span class="color_black">Atomic CSS</span> is a model or style of coding where each of properties has own style classes.
                 <br>
-                <br><span class="color_black">Atomic CSS</span> is good for fast creating the readable and easy changeable User Interface. </div>
+                <br><span class="color_black">Atomic CSS</span> is good for fast creating the readable and easy changeable User Interface. Also perfect for SPA(single page application). </div>
         </div>
         <br>
         <br>
         <div class="width_50% max-width_700px padding_20px background_rgba(250,250,250,0.7) color_#530218 font-size_20px margin_auto rotate_-4deg border_2px_solid_white">
             <div class="background_rgb(255,255,255) padding_20px shadow">
-                <h3 class="Times">What Orna do?</h3> If you plug orna.js into html document you will have a new skill that give you write css properties with values in class attribute and it will means class and property in one and we will call it atom. You can write properties with few value and that calls molecules. Molecules make your work easy when properties have many value. Also you have other functions that help you in your creation. </div>
+                <h3 class="Times">What Orna do?</h3> If you plug orna.js into html document you will have a new skill that give you write css properties with values in class attribute and it will means class and property in one and we will call it <span class="color_black">atom</span>. You can write properties with few value and that calls <span class="color_black">molecules</span>. Molecules make your work easy when properties have many value.</div>
         </div>
         <br>
         <br>
@@ -44,10 +44,15 @@
         <h2>Examples</h2>
         <br> <code class="height_100px color_black">
 <span class="font-size_20px arial">Structure</span><br><br>
-  <div class="width_40% border_thin_solid_#ee0645 center padding_10px">property_value</div><br>
-                 <div class="width_40% border_thin_solid_#ee0645 center padding_10px">property_value_event</div><br>
-  <div class="width_40% border_thin_solid_#ee0645 center padding_10px">property_value_childtagname</div><br>
-  <div class="width_40% border_thin_solid_#ee0645 center padding_10px">property_value_event_childtagname</div><br><br><br><br>
+  <div class="width_20% min-width_300px max-width_500px border_thin_solid_#ee0645 center padding_10px">property_value<br><br>
+                color_red
+                </div><br>
+                 <div class="width_20% min-width_300px max-width_500px border_thin_solid_#ee0645 center padding_10px">property_value_event<br><br>
+                 color_red_click</div><br>
+  <div class="width_20% min-width_300px max-width_500px border_thin_solid_#ee0645 center padding_10px">property_value_childtagname<br><br>
+  color_red_div</div><br>
+  <div class="width_20% min-width_300px max-width_500px border_thin_solid_#ee0645 center padding_10px">property_value_event_childtagname<br><br>
+  color_red_click_div</div><br><br><br><br>
   
    <span class="font-size_20px arial">CSS properties like classes</span><br><br>
     <span class="font-size_15px background_#F9a8be color_black">class="background-color_black width_50% height_100px margin_5px padding_4px border_4px_solid_red"</span><br>
@@ -116,37 +121,25 @@
       <br>
       <br>
       <br>
-    <div class="background-color_rgb(250,250,250)">
+    <div class="background-color_rgb(240,240,240)">
        <br>
       <br>
       <span class="font-size_20px arial">OrnaJS functions for Atomize</span><br><br>
 
 <div class="text-align_left">
-  <ol class="margin_auto width_400px color_#ee0645">
-      <li><span class="color_black">createatom(); - Run automatically when document ready, you can call it with arguments like #id, .class and tag name for render a special element. It looks Like: createatom('#id');</span></li><br><br>
+  <ol class="margin_auto width_400px color_#ee0645 list-style_none">
+      <li><span class="color_black">createatom(); - Main Orna function, it's run automatically when document is ready, you can call it with arguments like #id, .class and tag name for render a special element. It's useful when you need dynamically update your page or element<br>
+      
+       Looks Like:</span> createatom('<span class="color_black">#id</span>');</li><br>
 
-  <li><span class="color_black">reverseclass('id', 'classname1', 'classname2', listen); - change the classes. listen can be true or false.</span></li>
+
 
 
 </ol><br>
   </div><br>
-      <br>
-      <br>
     
-      <span class="font-size_20px arial">OrnaJS functions in additional</span><br><br>
+      
 
-<div class="text-align_left">
-  <ol class="margin_auto width_400px color_#ee0645">
-   <li><span class="color_black">reversebackground('id', 'url1', 'url2');</span></li><br><br>
-  <li><span class="color_black">widthadaptive('id', screenwidth, widthmain, widthnew);</span></li><br><br>
-  <li><span class="color_black">heightadaptive('id', screenwidth, heightmain, heightnew);</span></li><br><br>
-  <li><span class="color_black">titletimer();</span></li><br><br>
-   <li><span class="color_black">time('id');</span></li><br><br>
-   <li><span class="color_black">progressy('id', limit, step, speed);</span></li><br><br>
-   <li><span class="color_black">progressx('id', limit, step, speed);</span></li><br><br>
-
-</ol>
-  </div>
   </code> </div>
     </div>
     </div>
