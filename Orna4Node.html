@@ -8,16 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orna</title>
     <script src="jquery-1.12.0.js"></script>
-    <script src="orna-0.7.5.js"></script>
+    <script src="orna.js"></script>
 
 </head>
 <body class="bgc_black bgi_url(img/node.png) bgp_center">
    <br><br>
     <div class="min-width_500px max-width_1000px width_100% margin_auto color_#ee0645_h2 bgc_white padding_40px bgc_skyblue_code arial padding_10px_code">
-        
+        <h2>Info for version Orna4Node 1.0.0</h2>
         <strong><a href="https://github.com/OrnaOrg/Orna4Node-NW.JS">Orna4Node</a></strong> - the tool for easy creation Atomic CSS 
 
-        architecture. Based on <a href="http://nwjs.io">NW.JS.</a> Also you can use CLI version.
+        architecture. Based on <a href="http://nwjs.io">NW.JS.</a> Also you can use <a href="https://github.com/OrnaOrg/Orna4Node-CLI">CLI version</a>.
 <br><br>
         <strong>Atomic CSS</strong> - is an architecture that says that one CSS 
 
@@ -49,9 +49,24 @@ Orna4Node create atomic classes automatically in atomic.css file.
 <li>Download <a href="https://github.com/OrnaOrg/Orna4Node-CLI">Orna4Node-CLI</a>.</li><br>
 <li>Put orna4node.js into the root directory with index.html.</li><br>
 <li>Write index.html with Orna classes.</li><br>
-       <li>Start orna4node.js from CLI(Command line interface). Like: node orna4node.js. But before set file path in CLI. Like: cd C:\myapp.</li></ol><br><br>
-        
-        <strong>Structure:</strong> property_value, property_value_event, property_value_childtagname (#id, class), property_value_mediaqueries.<br><br>
+       <li>Start orna4node.js from CLI(Command line interface). Like: node orna4node.js. But before set file path in CLI. Like: cd C:\myapp.</li></ol><br>
+       <ol>
+           <strong>Use Orna4Node-CLI with <a href="https://github.com/OrnaOrg/reload">reload</a> node module. For Browser autoreload! It's recommended!</strong>
+<br><br>
+<li>Install Node.js</li><br>
+<li>Download Orna4Node-CLI</li><br>
+<li>Install reload node module from CMD. Write: (npm install -g reload).</li><br>
+<li>Start "reload". Write in CMD: reload --browser. But do it from right directory. For directory changes use "cd C:\path". Path where the index.html is.</li><br>
+<li>Create index.html with orna4node classes and put it with Orna4Node file.</li><br>
+<li>Start orna4node.js from CMD. Write: node orna4node.js. But do it from right directory. For directory changes use "cd C:\path".</li>
+        </ol><br>
+        <ol><strong>Structure:</strong> 
+        <br><br>
+        <li>property_value</li><br>
+         <li>property_value_event</li><br>
+          <li>property_value_childtagname (#id, class)</li><br>
+           <li>property_value_mediaqueries</li><br>
+           </ol><br>
 
         <strong>Event, Pseudo-classes:</strong><br><br>
 
@@ -95,28 +110,29 @@ transition-property or t-pro<br>
 transition-timing-function or t-fun<br>
 display or d<br>
         <i>And other like in CSS but with underscore : = _ !!!</i><br><br>
-
+<hr><br>
         <strong>Example:</strong><br><br>
 
         You can use : <code>class=" color_red margin_10px_hover height_100px width_10% "</code><br><br>
         You can use : <code>class=" c_red m_10px_ho h_100px w_10% "</code><br><br>
-        
-                <strong>Important:</strong><br><br>
-
-1. If classes are almost similar, the long class should be after short.<br><br>
+          <strong>Using media queries:</strong> class=" float_left_@600px ".
+    <br><br><br> 
+                <strong class="c_red">Important:</strong><br><br>
+<ol>
+<li>If classes are almost similar, the long class should be after short.</li><br>
       
-              class=" width_100px  width_100px_div "<br>
-or<br>
-class=" w_100px  w_100px_div "<br><br>
-       width_100px - width 100px to current element<br>
-width_100px_div - width 100px to child div element<br><br>
+    <code>class=" width_100px  width_100px_div "</code><br><br>
+or<br><br>
+    <code>class=" w_100px  w_100px_div "</code><br><br><br>
+    <code>width_100px</code> - width 100px to current element<br><br>
+    <code>width_100px_div</code> - width 100px to child div element<br><br>
 
-        2. Do not confuse <a href="Orna4Node.html">Orna4Node</a> and <a href="index.html">OrnaJS</a>.<br>
-        They similar, but have differences and used for different things.
+       <li>Do not confuse <a href="Orna4Node.html">Orna4Node</a> and <a href="index.html">OrnaJS</a>.<br>
+        They similar, but have differences and used for different things.</li>
+        </ol>
         <br>
         <br>
-        <strong>Using media queries:</strong> class=" float_left_@600px ".
-    <br><br>  <br><br>
+       <br><br>
      <strong>What was written in HTML</strong>
     <br>
     <img src="img/html.png">
@@ -127,5 +143,6 @@ width_100px_div - width 100px to child div element<br><br>
     <br>
     </div>
     <br><br>
+    
 </body>
 </html>
