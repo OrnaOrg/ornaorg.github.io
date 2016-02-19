@@ -407,6 +407,12 @@ function createatom(id) {
                         part[0] = 'font-weight';
                         addstyle(part, val);
                     }
+                }
+                else if (part[0] == "br") {
+                    if (val !== undefined) {
+                        part[0] = 'border-radius';
+                        addstyle(part, val);
+                    }
                 } else if (part[0] == "transition" || part[0] == "tran") {
                     if (part[2] === undefined || part[3] === undefined || part[4] === undefined) {
                         alert("Hello! Atomic class transition need four values, like it: transition_all_1s_ease_0.5s");
