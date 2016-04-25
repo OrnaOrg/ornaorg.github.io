@@ -13,14 +13,19 @@
 
 <body class="min-width_700px  background-color_white Arial margin_0">
    <div class="bgi_url('img/bgoffice.jpg') bgs_cover bga_fixed border-bottom_6px_solid_white">
-    <div class="bgc_rgba(255,255,255,0.85) textincenter h_950px overflow_hidden"><br><br>
+    <div class="bgc_white bgc_rgba(255,255,255,0.85) textincenter h_950px overflow_hidden"><br><br>
         <div class="width_50%  max-width_700px margin_auto padding_20px"> <img src="img/ornaname.png" class="width_100% scale_0.7_mouseover scale_1_mouseout  transition_all_0.5s_linear_0.5s">
 
             <a href="https://github.com/OrnaOrg/OrnaJS" class="text-decoration_none border_none outline_none"><img src="img/forkline.png" class="width_10% position_fixed top_0 left_90%"> </a>
         </div>
         <h1 class="fw_normal fs_21px c_black opacity_0.5">Decorate web page without directly writing CSS and JavaScript.<br><br>  OrnaJS is a tool that provide work by the <a href="http://acss.io/thinking-in-atomic.html" class="c_#ee0645 td_none">Atomic CSS</a> and <a href="https://andreypopp.com/posts/2014-08-06-react-style.html" class="c_#ee0645 td_none">React CSS</a><br> methodology for styling the page in a Single page application.</h1>
         <br> <br>  <div id="icowrap" class="ease"> <a href="#how"><img src="img/icodraw.png" class="w_100px h_100px"></a><br><br><br>
-         <div id="trycode"><div class="flexcenter- flexcenter|"><div id="result" class="overflow_auto ta_left w_300px h_250px  bgc_white border_2px_solid_black"></div><textarea maxlength="1000" id="ornacode" class="outline-color_#ee0645 overflow_auto p_0 border_none w_300px max-height_250px h_250px block bgc_black c_#ee0645 border_2px_solid_black"></textarea></div><br>
+         <div id="trycode">
+            <div class="flexcenter- flexcenter| w_700px center "><div id="result" class="inlineblock overflow_auto position_relative ta_left w_340px h_250px m_0 bgc_white border_2px_solid_black"></div><textarea maxlength="1000" id="ornacode" class="outline-color_#ee0645 overflow_auto p_0  border_2px_solid_black w_340px max-height_250px h_250px  bgc_black c_#ee0645 border_2px_solid_black">
+<!--Try OrnaJS-->
+<div class="w_100px h_100px bgc_skyblue bgc_skyblue_click bgc_salmon_over bgc_violet_out absolute clean m_auto"></div> 
+               
+               </textarea></div><br>
              <button id="watch" class="orna-btn">Watch</button></div>
              </div><br>
        </div></div>
@@ -471,6 +476,7 @@ $('#watch').click(function(){
 $('#result').html($('#ornacode').val());
   createatom();
 });
+    $('#watch').trigger('click');
 </script>
 
 </html>
