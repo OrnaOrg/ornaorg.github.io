@@ -337,6 +337,8 @@ See also :first or :last!<br>(bgc_red_div:first_click, bgc_red_thisdiv:first_cli
       <br> <br>
         <span class="font-size_20px arial"><span class="c_red">!!!</span>You can use prefix "this", like (<span class="c_red">height_200px_thisdiv_click</span>)!</span> <br> <br>
         <span class="font-size_20px arial"><span class="c_red">!!!</span>If you want decorate outside element not a child, use prefix "side", like (<span class="c_red">height_200px_side#id_click</span>)!</span>
+      <br> <br> 
+        <span class="font-size_20px arial"><span class="c_red">!!!</span>Write Orna classes without whitespace. Whitespace used, like separator between classes.</span>
       <br> <br>
       <br> <br>
     <div class="background-color_rgb(245,245,245) ">
@@ -346,9 +348,14 @@ See also :first or :last!<br>(bgc_red_div:first_click, bgc_red_thisdiv:first_cli
 
 <div class="text-align_left">
   <ol class="margin_auto width_400px color_#ee0645 list-style_none">
-      <li><span class="color_black">createatom(); - Main Orna function, it's run automatically when document is ready, you can call it with arguments like #id, .class and tag name for render a special element. It's useful when you need dynamically update your page or element.<br>
+      <li><span class="color_black"><span class="c_rgb(83,2,24)">createatom();</span> - Main Orna function, it's run automatically when document is ready, you can call it with arguments like #id, .class and tag name for render a special element. It's useful when you need dynamically update your page or element.<br>
 
        Looks Like:</span> createatom('<span class="color_black">#id</span>');</li><br>
+      <li><span class="color_black"><span class="c_rgb(83,2,24)">findmin(), findmax();</span> - functions, which find the minimal and maximal value in numeric array.<br><br>
+        <span class="color_#ee0645">findmin(array);</span>
+        </li><br>
+      <li><span class="color_black"><span class="c_rgb(83,2,24)">checkit();</span> - function, that check input field. checkit(element, regexp, color1, color2, length);
+        <br> <br> <span class="color_#ee0645">checkit("input", /[a-zA-Zа-яА-Я]+/, "red", "blue", 13);</span></li><br>
        </ol><br>
     <h2 class=" textincenter bg_black padding_10px  border-radius_10px c_rgb(245,245,245) width_400px margin_auto text-shadow_0_0_30px_0_black"><span class="c_#ee0645">OrnaJS</span> works with <a href="https://facebook.github.io/react" class="c_#61dafb text-decoration_none">ReactJS</a>, as well!!!</h2>
 <br>
