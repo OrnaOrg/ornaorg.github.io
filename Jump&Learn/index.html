@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
@@ -37,6 +37,10 @@
         cursor: pointer;
         
     }
+    button:hover{
+       background-color: black; 
+        
+    }
     a{
         text-decoration: none;
         color: #ff0000;
@@ -47,6 +51,7 @@
      a:hover{
         color: white;
     }
+    
     hr{
         border: 1px solid gray;
     }
@@ -61,13 +66,19 @@
     <br>
     <br>
     
-    
+    <h2>Jump & Learn</h2>
     <div id='exBlock'></div>
     <br>
+    <button id="jump">Jump</button>
+    <br><br>
+   <a href="Jump&Learn.zip"><button >Download Jump&Learn</button></a> 
+    
     <div style="text-align:center">
    <br> <br>
      <iframe src="" width="100%" height="550px"></iframe>
-      <br><br>
+      <hr>
+      <br>
+      <br>
     <a href="http://ornaorg.github.io">OrnaJS</a>
     <a href="https://developer.mozilla.org">MDN</a>
     <a href="http://barkeepersoft.bitbucket.org">BarKeeper</a>
@@ -79,22 +90,22 @@
     </body>
 <script>
   
-    function shakeIt() {
-        var index = Math.round(Math.random() * 100);
-        it = excerption[index];
+    function JumpTo() {
+        var index = Math.round(Math.random() * excerption.length);
+        var it = excerption[index];
         if(it !== undefined){
         document.getElementById('exBlock').innerHTML = it;
         var href = $('a').attr('href');
             $('iframe').attr('src', href);
-        
+        //alert(index);
         }
         else{
-            shakeIt();
+            JumpTo();
         }
         
     }
-shakeIt();
-   $('#exBlock').click(shakeIt);
+JumpTo();
+   $('#jump').click(JumpTo);
     
    
     
