@@ -13,8 +13,8 @@
     <link rel="icon" href="img/icon.png"> </head>
 
 <body class="min-width_730px  background-color_white Arial margin_0">
-   <div class="bgi_url('img/bgoffice.jpg') bgs_cover bga_fixed border-bottom_6px_solid_white">
-    <div class="bgc_white bgc_rgba(255,255,255,0.85) textincenter h_950px overflow_hidden"><br><br>
+   <div class="bgi_url('img/bgoffice.jpg') bgs_cover bga_fixed border-bottom_4px_solid_white">
+    <div class="bgc_white bgc_rgba(255,255,255,0.9) textincenter h_950px overflow_hidden"><br><br>
         <div class="width_50%  max-width_700px margin_auto padding_20px"> <img src="img/ornaname.png" class="width_100% scale_0.7_mouseover scale_1_mouseout  transition_all_0.5s_linear_0.5s">
 
             <a href="https://github.com/OrnaOrg/OrnaJS" class="text-decoration_none border_none outline_none"><img src="img/forkline.png" class="width_10% position_fixed top_0 left_90%"> </a>
@@ -22,10 +22,11 @@
         <h1 class="fw_normal fs_21px c_black opacity_0.5">Decorate web page without directly writing CSS and JavaScript.<br><br>  OrnaJS is a tool that provide work by the <a href="http://acss.io/thinking-in-atomic.html" class="c_#ee0645 td_none">Atomic CSS</a> and <a href="https://andreypopp.com/posts/2014-08-06-react-style.html" class="c_#ee0645 td_none">React CSS</a><br> methodology for styling the page in a Single page application.</h1>
         <br> <br>  <div id="icowrap" class="ease"> <a href="#how"><img src="img/icodraw.png" class="w_100px h_100px"></a><br><br><br>
          <div id="trycode">
-            <div class="flexcenter- flexcenter| w_700px center "><div id="result" class="inlineblock overflow_auto position_relative ta_left w_340px h_250px m_0 bgc_white border_2px_solid_black"></div><textarea maxlength="1000" id="ornacode" class="outline-color_#ee0645 overflow_auto p_0  border_2px_solid_black w_340px max-height_250px h_250px  bgc_black c_#ee0645 border_2px_solid_black">
+            <div class="flexcenter- flexcenter| w_700px center "><div id="result" class="inlineblock overflow_auto position_relative ta_left w_340px h_254px m_0 bgc_white  box-shadow_0_0_20px_0_black"></div><textarea maxlength="1000" id="ornacode" class="outline-color_#ee0645 overflow_auto  border_2px_solid_black w_340px max-height_250px h_250px  bgc_black c_#ee0645  box-shadow_0_0_20px_0_black">
 <!--Try OrnaJS-->
-<div class="w_100px h_100px bgc_skyblue bgc_skyblue_click bgc_salmon_over bgc_violet_out absolute clean m_auto"></div> 
-               
+
+<div class="w_100px h_100px bgc_skyblue  bgc_skyblue_out bgc_#ee0645_over  br_100%_out br_0_over  ease absolute clean m_auto"></div> 
+<div class="w_50px h_50px bgc_skyblue  bgc_skyblue_out bgc_#ee0645_over   br_100%_out br_0_over   ease absolute clean m_auto"></div> 
                </textarea></div><br>
              <button id="watch" class="orna-btn">Watch</button></div>
              </div><br>
@@ -33,7 +34,7 @@
     <div class="background-color_rgb(245,245,245) bgi_url(img/atom.png)">
         <br>
         <br>
-        <div class="width_50% max-width_700px padding_20px background_rgba(90,90,90,0.7) color_#530218 font-size_20px margin_auto rotate_4deg border_2px_solid_white">
+        <div class="width_50% max-width_700px padding_20px background_rgba(255,255,255,0.6) color_#530218 font-size_20px margin_auto rotate_4deg border_2px_solid_white">
             <div class="background_rgb(255,255,255) padding_20px shadow">
                 <h3 class="Times">What is Orna?</h3> <a href="https://github.com/OrnaOrg/OrnaJS" class="color_#ee0645 text-decoration_none">Orna</a> is good Atomic CSS tool, designed for atomize Web UI. Also perfect for SPA(single page application) or like additional.
                 <br>
@@ -43,13 +44,13 @@
         </div>
         <br>
         <br>
-        <div class="width_50% max-width_700px padding_20px background_rgba(90,90,90,0.7) color_#530218 font-size_20px margin_auto rotate_-4deg border_2px_solid_white">
+        <div class="width_50% max-width_700px padding_20px background_rgba(255,255,255,0.6)  color_#530218 font-size_20px margin_auto rotate_-4deg border_2px_solid_white">
             <div class="background_rgb(255,255,255) padding_20px shadow">
                 <h3 class="Times">What Orna do?</h3> If you plug orna.js into HTML document you will have a new skill that gives you write css properties with values in class attribute and it will means class and property in one and we will call it <span class="color_black">atom</span>. You can write properties with few value and that calls <span class="color_black">molecules</span>. Molecules make your work easy when properties have many value. It's better than style attribute, because you have events and inheritance.</div>
         </div>
         <br>
         <br>
-        <div class="width_50% max-width_700px padding_20px background_rgba(90,90,90,0.7) color_#530218 font-size_20px margin_auto rotate_4deg border_2px_solid_white">
+        <div class="width_50% max-width_700px padding_20px background_rgba(255,255,255,0.6)  color_#530218 font-size_20px margin_auto rotate_4deg border_2px_solid_white">
             <div class="background_rgb(255,255,255) padding_20px shadow">
                 <h3 class="Times">How Orna work?</h3> Just write CSS properties into the class attribute then write underscore and value. <span class="color_#ee0645">Orna</span> scan the html document, find atoms and define it directly to the element. Event you can create with <a href="http://jquery.com" class="text-decoration_none color_#0769AD">jQuery</a> functions <span class="color_black">addClass()</span>, <span class="color_black">removeClass()</span> and use onclick, onmouseover, onfocus, onblur and other. Or simply add Orna tail to the class name like: <span class="color_black">mouseover, mouseout, focus, blur, click. (width_100px_click, property_value_event)</span>
             </div>
