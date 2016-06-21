@@ -139,7 +139,7 @@
      '<a href="http://babeljs.io">Babel</a> - a JavaScript compiler. Use next generation JavaScript, today.',
      '<a href="https://www.heroku.com">Heroku</a> - cloud application platform, Platform as a Service.',
      '<a href="http://akdubya.github.io/dustjs">Dust</a> - template engine.',
-     '<a href="http://jade-lang.com">Jade/a> - node template engine.',
+     '<a href="http://jade-lang.com">Jade</a> - node template engine.',
      '<a href="http://sass-lang.com">Sass</a> - Syntactically Awesome Style Sheets, CSS extension language.',
      '<a href="http://daneden.github.io/animate.css/">Animate.css</a> - CSS animations pack.',
      '<a href="http://www.cleancss.com">cleancss.com</a> - beautify, minify, format, or compress many different file formats.',
