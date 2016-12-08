@@ -12,15 +12,15 @@
     <link rel="icon" href="img/icon.png"> </head>
 
 <body class="min-width_730px  background-color_white Arial margin_0">
-    <div class="bgc_white bgi_url('img/bgoffice.jpg') bgs_cover bga_fixed border-bottom_4px_solid_white">
+    <div class="bgc_white bgi_url('img/all.jpg') bgs_cover bga_fixed border-bottom_4px_solid_white">
         <div class="bgc_white bgc_rgba(255,255,255,0) textincenter h_600px overflow_hidden">
             <br>
             <br>
             <div class="width_50%  max-width_700px margin_auto padding_20px">
-                <div class="bgc_white bgc_rgba(255,255,255,0.9) inlineblock p_20px"> <img src="img/ornaname.png" class="width_100% scale_0.7_mouseover scale_1_mouseout  transition_all_0.5s_linear_0.5s">
-                    <h1 class="fw_normal fs_21px c_black opacity_0.5">Decorate web page without directly writing CSS and JavaScript.<br><br>  OrnaJS is a tool that provide work by the <a href="http://acss.io/thinking-in-atomic.html" class="c_#ee0645 td_none">Atomic CSS</a> and <a href="https://andreypopp.com/posts/2014-08-06-react-style.html" class="c_#ee0645 td_none">React CSS</a><br> methodology for styling the page in a Single page application.</h1>
+                <div class="bgc_white bgc_rgba(255,255,255,0.8) inlineblock p_20px"> <img src="img/ornaname.png" class="width_100% scale_0.7_mouseover scale_1_mouseout  transition_all_0.5s_linear_0.5s">
+                    <div class="bgc_white bgc_rgba(255,255,255,1) p_20px"><h1 class="fw_normal fs_21px c_black opacity_0.7">Decorate web page without directly writing CSS and JavaScript.<br><br>  OrnaJS is a tool that provide work by the <a href="http://acss.io/thinking-in-atomic.html" class="c_#ee0645 td_none">Atomic CSS</a> and <a href="https://andreypopp.com/posts/2014-08-06-react-style.html" class="c_#ee0645 td_none">React CSS</a><br> methodology for styling the page in a Single page application.</h1></div>
                     <a href="https://github.com/OrnaOrg/OrnaJS" class="text-decoration_none border_none outline_none"><img src="img/forkline.png" class="width_10% position_fixed top_0 left_90%"> </a>
-                </div><br><br><br><br><br><br>
+                </div><br><br><br>
                 <a href="faq.html" class="orna-btn td_none">OrnaJS Disqus</a><br><br>
                <!--
         <br> <br>  <div id="icowrap" class="ease"> <a href="#how"><img src="img/icodraw.png" class="w_100px h_100px"></a><br><br><br>
@@ -36,10 +36,10 @@
             </div>
         </div>
     </div>
-    <div class="background-color_rgb(0,0,0) bgi_url(img/atom.png) bga_fixed">
+    <div class="background-color_rgb(255,255,255) bgi_url(img/atom.png) bga_fixed">
         <br>
         <br>
-        <div class="width_50% max-width_700px padding_20px background_rgba(255,255,255,1)  color_#530218 font-size_20px margin_auto rotate_4deg border_2px_solid_white">
+        <div class="width_50% max-width_700px padding_20px background_rgba(220,220,220,1)  color_#530218 font-size_20px margin_auto rotate_4deg border_2px_solid_white">
             <div class="background_rgb(255,255,255) padding_20px shadow">
                 <h3 class="Times">What is Orna?</h3> <a href="https://github.com/OrnaOrg/OrnaJS" class="color_#ee0645 text-decoration_none">Orna</a> is good Atomic CSS tool, designed for atomize Web UI. Also perfect for SPA(single page application) or like additional.
                 <br>
@@ -49,13 +49,13 @@
         </div>
         <br>
         <br>
-        <div class="width_50% max-width_700px padding_20px background_rgba(255,255,255,1)  color_#530218 font-size_20px margin_auto rotate_-4deg border_2px_solid_white">
+        <div class="width_50% max-width_700px padding_20px background_rgba(230,230,230,1)  color_#530218 font-size_20px margin_auto rotate_-4deg border_2px_solid_white">
             <div class="background_rgb(255,255,255) padding_20px shadow">
                 <h3 class="Times">What Orna do?</h3> If you plug orna.js into HTML document you will have a new skill that gives you write css properties with values in class attribute and it will means class and property in one and we will call it <span class="color_black">atom</span>. You can write properties with few value and that calls <span class="color_black">molecules</span>. Molecules make your work easy when properties have many value. It's better than style attribute, because you have events and inheritance.</div>
         </div>
         <br>
         <br>
-        <div class="width_50% max-width_700px padding_20px background_rgba(255,255,255,1)  color_#530218 font-size_20px margin_auto rotate_4deg border_2px_solid_white">
+        <div class="width_50% max-width_700px padding_20px background_rgba(240,240,240,1)  color_#530218 font-size_20px margin_auto rotate_4deg border_2px_solid_white">
             <div class="background_rgb(255,255,255) padding_20px shadow">
                 <h3 class="Times">How Orna work?</h3> Just write CSS properties into the class attribute then write underscore and value. <span class="color_#ee0645">Orna</span> scan the html document, find atoms and define it directly to the element. Event you can create with <a href="http://jquery.com" class="text-decoration_none color_#0769AD">jQuery</a> functions <span class="color_black">addClass()</span>, <span class="color_black">removeClass()</span> and use onclick, onmouseover, onfocus, onblur and other. Or simply add Orna tail to the class name like: <span class="color_black">mouseover, mouseout, focus, blur, click. (width_100px_click, property_value_event)</span> </div>
         </div>
@@ -352,18 +352,28 @@ See also :first or :last!<br>(bgc_red_div:first_click, bgc_red_thisdiv:first_cli
     <div class="background-color_rgb(245,245,245) ">
        <br>
       <br>
-      <span class="font-size_20px arial">OrnaJS functions for Atomize</span><br><br>
+ <span class="font-size_20px arial">OrnaJS functions</span><br><br>
 
 <div class="text-align_left">
   <ol class="margin_auto width_400px color_#ee0645 list-style_none">
-      <li><span class="color_black"><span class="c_rgb(83,2,24)">createatom();</span> - Main Orna function, it's run automatically when document is ready, you can call it with arguments like #id, .class and tag name for render a special element. It's useful when you need dynamically update your page or element.<br>
+      <li><span class="color_black"><span class="c_rgb(83,2,24)">createatom();</span> - Main Orna function, it's run automatically when document is ready, you can call it with arguments like #id, .class and tag name for render a special element. It's useful when you need dynamically update your page or element.<br><br>
 
        Looks Like:</span> createatom('<span class="color_black">#id</span>');</li><br>
       <li><span class="color_black"><span class="c_rgb(83,2,24)">findmin(), findmax();</span> - functions, which find the minimal and maximal value in numeric array.<br><br>
-        <span class="color_#ee0645">findmin(array);</span>
+        <span class="color_#ee0645">findmin([1,2,3]);</span> //1
         </li><br>
       <li><span class="color_black"><span class="c_rgb(83,2,24)">checkit();</span> - function, that check input field. checkit(element, regexp, color1, color2, length);
         <br> <br> <span class="color_#ee0645">checkit("input", /[a-zA-Zа-яА-Я]+/, "red", "blue", 13);</span></li><br>
+          <li><span class="color_black"><span class="c_rgb(83,2,24)">getMiddle();</span> - function return the middle character of the word. If the word's length is odd, return the middle character. If the word's length is even, return the middle 2 characters.
+        <br> <br> <span class="color_#ee0645">getMiddle("string"); getMiddle(123);</span> //ri, //2</li><br>         
+         <li><span class="color_black"><span class="c_rgb(83,2,24)">stray();</span> - function implement the method stray which accepts such array, and returns that single different number.
+        <br> <br> <span class="color_#ee0645">stray([2,2,2,1,2,2,2]);</span> //1</li><br> 
+        <li><span class="color_black"><span class="c_rgb(83,2,24)">flatten();</span> - function that flattens an Array of Array objects into a flat Array.
+        <br> <br> <span class="color_#ee0645">flatten([['Or'],['na']]);</span> //Or,na</li><br>
+        <li><span class="color_black"><span class="c_rgb(83,2,24)">isIsogram();</span> - An isogram is a word that has no repeating letters, consecutive or non-consecutive. This function determines whether a string that contains only letters is an isogram. 
+        <br> <br> <span class="color_#ee0645">isIsogram('Popov');</span> //False</li><br>    
+         <li><span class="color_black"><span class="c_rgb(83,2,24)">capitals();</span> - function return an ordered list containing the indexes of all capital letters in the string.
+        <br> <br> <span class="color_#ee0645">capitals('DiMa');</span> //0,2</li><br>
        </ol><br><!--<hr><br><br>
     <h2 class=" textincenter bg_black padding_10px  border-radius_10px c_rgb(245,245,245) width_400px margin_auto text-shadow_0_0_30px_0_black"><span class="c_#ee0645">OrnaJS</span> works with <a href="https://facebook.github.io/react" class="c_#61dafb text-decoration_none">ReactJS</a>, as well!!!</h2>
 <br>

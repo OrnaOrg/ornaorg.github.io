@@ -1,8 +1,9 @@
 //https://github.com/OrnaOrg/OrnaJS
 //http://ornaorg.github.io
-//version ornajs 3.3.5
+//version ornajs 3.4.0
 //bower install OrnaJS
 /*------------------createatom();----Main-function---------------------*/
+var orna_separator = "_";
 $(document).ready(function() {
     createatom();
 });
@@ -13,7 +14,7 @@ function createAtom(id) {
 
 function createatom(id) {
         if (id === undefined) {
-            var tag = ['body', 'div', 'p', 'form', 'button', 'img', 'input', 'a', 'ul', 'ol', 'li', 'select', 'option', 'span', 'table', 'td', 'tr', 'th', 'tbody', 'thead', 'tfoot', 'main', 'nav', 'menu', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'textarea', 'fieldset', 'header', 'footer', 'code', 'pre', 'video', 'audio', 'aside', 'article', 'address', 'blockquote', 'label', 'strong', 'i', 'legend', 'caption', 'big', 'small', 'noscript', 'progress', 'section', 'hr', 'section', 'canvas', 'iframe', 'cite', 'abbr', 'acronym'];
+            var tag = ['body', 'div', 'p', 'form', 'button', 'img', 'input', 'a', 'ul', 'ol', 'li', 'select', 'option', 'span', 'table', 'td', 'tr', 'th', 'tbody', 'thead', 'tfoot', 'main', 'nav', 'menu', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'textarea', 'fieldset', 'header', 'footer', 'code', 'pre', 'video', 'audio', 'aside', 'article', 'address', 'blockquote', 'label', 'strong', 'i', 'legend', 'caption', 'big', 'small', 'noscript', 'progress', 'section', 'hr', 'section', 'canvas', 'iframe', 'cite', 'abbr', 'acronym','mark','time','basefont','q','sup','sub'];
             /*-----Scan-all-tags------------------------*/
             function toall(tag, tagsize) {
                 for (var i = 0; i !== tagsize; i++) {
@@ -42,7 +43,7 @@ function createatom(id) {
                 if (attr !== undefined) {
                     style = attr.split(' ');
                     for (var i = 0; i !== style.length; i++) {
-                        var part = style[i].split('_');
+                        var part = style[i].split(orna_separator);
                         var prop = part[0];
                         var val = part[1];
                         //---------------------------------------
@@ -1256,3 +1257,28 @@ function inTime() {
     $('.inTime').text(hours + ':' + minutes + ':' + seconds);
     setInterval(inTime, 1000);
 }
+
+function getMiddle(s) {
+    s = s.toString();
+    return s.substr(Math.ceil(s.length / 2 - 1), s.length % 2 === 0 ? 2 : 1);
+}
+
+function stray(numbers) {
+    for (var i in numbers) {
+        if (numbers.indexOf(numbers[i]) === numbers.lastIndexOf(numbers[i])) {
+            return numbers[i]
+        }
+    }
+}
+var flatten = function(lol) {
+    return [].concat.apply([], lol);
+}
+
+function isIsogram(str) {
+    return !/(\w).*\1/i.test(str)
+}
+var capitals = function(word) {
+    return word.split('').reduce(function(memo, v, i) {
+        return v === v.toUpperCase() ? memo.concat(i) : memo;
+    }, []);
+};
